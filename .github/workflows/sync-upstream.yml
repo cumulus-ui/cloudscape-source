@@ -1,0 +1,70 @@
+name: Sync upstream Cloudscape
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'  # Every Monday at 06:00 UTC
+  workflow_dispatch: {}    # Manual trigger
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch upstream
+        run: |
+          git remote add upstream https://github.com/cloudscape-design/components.git || true
+          git fetch upstream main
+
+      - name: Check pages/ integrity
+        id: check
+        run: |
+          # Verify pages/ directory still exists with permutation files
+          PAGE_COUNT=$(git ls-tree -r upstream/main --name-only | grep 'pages/.*/permutations' | wc -l)
+          echo "page_count=$PAGE_COUNT" >> "$GITHUB_OUTPUT"
+
+          if [ "$PAGE_COUNT" -lt 10 ]; then
+            echo "safe=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::pages/ directory has fewer than 10 permutation files ($PAGE_COUNT found). Skipping merge."
+          else
+            echo "safe=true" >> "$GITHUB_OUTPUT"
+            echo "Found $PAGE_COUNT permutation files upstream — safe to merge."
+          fi
+
+      - name: Merge upstream
+        if: steps.check.outputs.safe == 'true'
+        run: |
+          git merge upstream/main --no-edit || {
+            echo "::warning::Merge conflict detected. Creating issue."
+            git merge --abort
+            echo "conflict=true" >> "$GITHUB_ENV"
+          }
+
+      - name: Push
+        if: steps.check.outputs.safe == 'true' && env.conflict != 'true'
+        run: git push origin main
+
+      - name: Create alert issue
+        if: steps.check.outputs.safe == 'false' || env.conflict == 'true'
+        run: |
+          if [ "${{ steps.check.outputs.safe }}" = "false" ]; then
+            TITLE="Upstream sync blocked: pages/ directory may have been removed"
+            BODY="The weekly upstream sync detected that the pages/ directory has fewer than 10 permutation files (${{ steps.check.outputs.page_count }} found). The merge was skipped to protect our fork. Please investigate manually."
+          else
+            TITLE="Upstream sync blocked: merge conflict"
+            BODY="The weekly upstream sync encountered a merge conflict. Please resolve manually:\n\`\`\`\ngit fetch upstream main\ngit merge upstream/main\n# resolve conflicts\ngit push origin main\n\`\`\`"
+          fi
+          gh issue create --title "$TITLE" --body "$BODY" --label "sync"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
