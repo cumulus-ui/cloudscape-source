@@ -213,6 +213,21 @@ export interface DateRangePickerProps
    * Adds `aria-label` to the trigger and dropdown.
    */
   ariaLabel?: string;
+
+  /**
+   * Specifies whether to start with the previous or current period (month or year)
+   * when multiple calendar grids are displayed in absolute mode.
+   *
+   * Defaults to 'auto', which starts with previous if no date is selected,
+   * or current if a selection is present.
+   */
+  absoluteMultiGridStartPeriod?: DateRangePickerProps.StartPeriod;
+
+  /**
+   * Specifies custom content to fully override the trigger content.
+   * When provided, the default content of the trigger is replaced.
+   */
+  renderTriggerContent?: DateRangePickerProps.RenderTriggerContent;
 }
 
 export namespace DateRangePickerProps {
@@ -302,6 +317,8 @@ export namespace DateRangePickerProps {
     selectedRange: RelativeValue | null,
     setSelectedRange: (value: RelativeValue) => void
   ) => React.ReactNode;
+
+  export type RenderTriggerContent = (props: { formattedDate: JSX.Element }) => React.ReactNode;
 
   export type RangeSelectorMode = 'default' | 'absolute-only' | 'relative-only';
 
@@ -609,6 +626,8 @@ export namespace DateRangePickerProps {
   export type DateInputFormat = EditableDateFormat | undefined;
 
   export type TimeInputFormat = TimeInputProps.Format;
+
+  export type StartPeriod = 'previous' | 'current' | 'auto';
 }
 
 export type DayIndex = 0 | 1 | 2 | 3 | 4 | 5 | 6;

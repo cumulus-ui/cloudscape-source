@@ -60,6 +60,7 @@ const tokens: StyleDictionary.ColorsDictionary = {
   colorBackgroundInputDisabled: { light: '{colorNeutral250}', dark: '{colorNeutral800}' },
   colorBackgroundItemSelected: { light: '{colorPrimary50}', dark: '{colorPrimary1000}' },
   colorBackgroundLayoutMain: { light: '{colorWhite}', dark: '{colorNeutral850}' },
+  colorBackgroundDrawer: '{colorBackgroundLayoutPanelContent}',
   colorBackgroundLayoutMobilePanel: '{colorNeutral950}',
   colorBackgroundLayoutPanelContent: '{colorBackgroundContainerContent}',
   colorBackgroundLayoutPanelHover: { light: '{colorNeutral250}', dark: '{colorNeutral700}' },
@@ -306,6 +307,19 @@ const tokens: StyleDictionary.ColorsDictionary = {
   colorDropzoneBorderHover: { light: '{colorPrimary900}', dark: '{colorPrimary300}' },
   colorGapGlobalDrawer: { light: '{colorNeutral250}', dark: '{colorNeutral950}' },
   colorTreeViewConnectorLine: { light: '{colorNeutral500}', dark: '{colorNeutral300}' },
+  colorBackgroundActionCardDefault: { light: '{colorWhite}', dark: '{colorNeutral850}' },
+  colorBackgroundActionCardHover: { light: '{colorPrimary50}', dark: '{colorNeutral800}' },
+  colorBackgroundActionCardActive: { light: '{colorPrimary100}', dark: '{colorNeutral700}' },
+  colorBorderActionCardDefault: { light: '{colorPrimary600}', dark: '{colorPrimary400}' },
+  colorBorderActionCardHover: { light: '{colorPrimary900}', dark: '{colorPrimary300}' },
+  colorBorderActionCardActive: { light: '{colorPrimary900}', dark: '{colorPrimary300}' },
+  colorBorderActionCardDisabled: { light: '{colorNeutral400}', dark: '{colorNeutral600}' },
+  colorBackgroundActionCardDisabled: { light: '{colorWhite}', dark: '{colorNeutral850}' },
+  colorTextActionCardDisabled: { light: '{colorNeutral500}', dark: '{colorNeutral500}' },
+  colorIconActionCardDefault: { light: '{colorPrimary600}', dark: '{colorPrimary400}' },
+  colorIconActionCardHover: { light: '{colorPrimary900}', dark: '{colorPrimary300}' },
+  colorIconActionCardActive: { light: '{colorPrimary900}', dark: '{colorPrimary300}' },
+  colorIconActionCardDisabled: { light: '{colorNeutral400}', dark: '{colorNeutral600}' },
 };
 
 const expandedTokens: StyleDictionary.ExpandedColorScopeDictionary = expandColorDictionary(tokens);
