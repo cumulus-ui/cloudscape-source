@@ -3173,6 +3173,7 @@ Instead, use \`onSelect\` in combination with the \`onChange\` handler only as a
                       "ellipsis",
                       "zoom-in",
                       "zoom-out",
+                      "dot",
                       "security",
                       "download",
                       "edit",
@@ -5032,7 +5033,7 @@ exports[`Components definition for breadcrumb-group matches the snapshot: breadc
   "events": [
     {
       "cancelable": true,
-      "description": "Called when the user clicks on a breadcrumb item.",
+      "description": "Called when the user clicks on a breadcrumb item. Do not use this handler for navigation, use the \`onFollow\` event instead.",
       "detailInlineType": {
         "name": "BreadcrumbGroupProps.ClickDetail<T>",
         "properties": [
@@ -5474,6 +5475,7 @@ This property is ignored if you use a predefined icon or if you set your custom 
           "ellipsis",
           "zoom-in",
           "zoom-out",
+          "dot",
           "security",
           "download",
           "edit",
@@ -6271,6 +6273,7 @@ The main action also supports the following properties of the [button](/componen
                 "ellipsis",
                 "zoom-in",
                 "zoom-out",
+                "dot",
                 "security",
                 "download",
                 "edit",
@@ -6588,9 +6591,6 @@ When returning \`null\`, the default styling will be applied.",
       },
       "name": "renderItem",
       "optional": true,
-      "systemTags": [
-        "core",
-      ],
       "type": "ButtonDropdownProps.ItemRenderer",
     },
     {
@@ -14566,6 +14566,7 @@ use the \`id\` attribute, consider setting it on a parent element instead.",
           "ellipsis",
           "zoom-in",
           "zoom-out",
+          "dot",
           "security",
           "download",
           "edit",
@@ -14988,6 +14989,11 @@ The same applies to switching icons in the same configuration (for example, \`{'
           },
           {
             "name": "delete-marker",
+            "optional": true,
+            "type": "React.ReactNode",
+          },
+          {
+            "name": "dot",
             "optional": true,
             "type": "React.ReactNode",
           },
@@ -19107,7 +19113,19 @@ exports[`Components definition for pagination matches the snapshot: pagination 1
       "name": "onPreviousPageClick",
     },
   ],
-  "functions": [],
+  "functions": [
+    {
+      "description": "Set error state for jump to page. Component will auto-clear when user types or navigates.",
+      "name": "setError",
+      "parameters": [
+        {
+          "name": "hasError",
+          "type": "boolean",
+        },
+      ],
+      "returnType": "void",
+    },
+  ],
   "name": "Pagination",
   "properties": [
     {
@@ -19131,6 +19149,11 @@ Example:
       "inlineType": {
         "name": "PaginationProps.Labels",
         "properties": [
+          {
+            "name": "jumpToPageButton",
+            "optional": true,
+            "type": "string",
+          },
           {
             "name": "nextPageLabel",
             "optional": true,
@@ -19181,6 +19204,50 @@ from changing page before items are loaded.",
       "name": "disabled",
       "optional": true,
       "type": "boolean",
+    },
+    {
+      "i18nTag": true,
+      "inlineType": {
+        "name": "PaginationProps.I18nStrings",
+        "properties": [
+          {
+            "name": "jumpToPageError",
+            "optional": true,
+            "type": "string",
+          },
+          {
+            "name": "jumpToPageInputLabel",
+            "optional": true,
+            "type": "string",
+          },
+          {
+            "name": "jumpToPageLoadingText",
+            "optional": true,
+            "type": "string",
+          },
+        ],
+        "type": "object",
+      },
+      "name": "i18nStrings",
+      "optional": true,
+      "type": "PaginationProps.I18nStrings",
+    },
+    {
+      "description": "Jump to page configuration",
+      "inlineType": {
+        "name": "PaginationProps.JumpToPageProps",
+        "properties": [
+          {
+            "name": "loading",
+            "optional": true,
+            "type": "boolean",
+          },
+        ],
+        "type": "object",
+      },
+      "name": "jumpToPage",
+      "optional": true,
+      "type": "PaginationProps.JumpToPageProps",
     },
     {
       "description": "Sets the pagination variant. It can be either default (when setting it to \`false\`) or open ended (when setting it
@@ -20545,6 +20612,7 @@ Requires React 18.",
                       "ellipsis",
                       "zoom-in",
                       "zoom-out",
+                      "dot",
                       "security",
                       "download",
                       "edit",
@@ -20908,6 +20976,7 @@ This property is ignored if you use a predefined icon or if you set your custom 
           "ellipsis",
           "zoom-in",
           "zoom-out",
+          "dot",
           "security",
           "download",
           "edit",
@@ -23816,6 +23885,11 @@ The function will be called when a user clicks on the trigger button.",
               "name": "PaginationProps.Labels",
               "properties": [
                 {
+                  "name": "jumpToPageButton",
+                  "optional": true,
+                  "type": "string",
+                },
+                {
                   "name": "nextPageLabel",
                   "optional": true,
                   "type": "string",
@@ -24482,6 +24556,7 @@ The event \`detail\` contains the current \`selectedOption\`.",
                       "ellipsis",
                       "zoom-in",
                       "zoom-out",
+                      "dot",
                       "security",
                       "download",
                       "edit",
@@ -25098,6 +25173,7 @@ If you want to clear the selection, use \`null\`.",
                 "ellipsis",
                 "zoom-in",
                 "zoom-out",
+                "dot",
                 "security",
                 "download",
                 "edit",
@@ -26503,9 +26579,6 @@ The function is called for each step and should return an object with the follow
       },
       "name": "renderStep",
       "optional": true,
-      "systemTags": [
-        "core",
-      ],
       "type": "((step: StepsProps.Step) => { header: React.ReactNode; details?: React.ReactNode; icon?: React.ReactNode; })",
     },
     {
@@ -30602,6 +30675,7 @@ If an href is provided, it opens the link in a new tab.",
           "ellipsis",
           "zoom-in",
           "zoom-out",
+          "dot",
           "security",
           "download",
           "edit",
@@ -30810,6 +30884,7 @@ We do not support using this attribute to apply custom styling.",
           "ellipsis",
           "zoom-in",
           "zoom-out",
+          "dot",
           "security",
           "download",
           "edit",
@@ -36514,6 +36589,33 @@ Returns the current value of the input.",
           },
         },
         {
+          "description": "Returns the jump to page submit button.",
+          "name": "findJumpToPageButton",
+          "parameters": [],
+          "returnType": {
+            "isNullable": true,
+            "name": "ButtonWrapper",
+          },
+        },
+        {
+          "description": "Returns the jump to page input field.",
+          "name": "findJumpToPageInput",
+          "parameters": [],
+          "returnType": {
+            "isNullable": true,
+            "name": "InputWrapper",
+          },
+        },
+        {
+          "description": "Returns the error popover for jump to page.",
+          "name": "findJumpToPagePopover",
+          "parameters": [],
+          "returnType": {
+            "isNullable": true,
+            "name": "PopoverWrapper",
+          },
+        },
+        {
           "name": "findNextPageButton",
           "parameters": [],
           "returnType": {
@@ -36585,6 +36687,88 @@ Returns the current value of the input.",
         },
       ],
       "name": "PaginationWrapper",
+    },
+    {
+      "methods": [
+        {
+          "name": "findContent",
+          "parameters": [
+            {
+              "defaultValue": "{ renderWithPortal: false }",
+              "description": "* renderWithPortal (boolean) - Flag to find the content when the popover is rendered with a portal",
+              "flags": {
+                "isOptional": false,
+              },
+              "name": "options",
+              "typeName": "{ renderWithPortal: boolean; }",
+            },
+          ],
+          "returnType": {
+            "isNullable": true,
+            "name": "ElementWrapper",
+            "typeArguments": [
+              {
+                "name": "HTMLElement",
+              },
+            ],
+          },
+        },
+        {
+          "name": "findDismissButton",
+          "parameters": [
+            {
+              "defaultValue": "{ renderWithPortal: false }",
+              "description": "* renderWithPortal (boolean) - Flag to find the dismiss button when the popover is rendered with a portal",
+              "flags": {
+                "isOptional": false,
+              },
+              "name": "options",
+              "typeName": "{ renderWithPortal: boolean; }",
+            },
+          ],
+          "returnType": {
+            "isNullable": true,
+            "name": "ButtonWrapper",
+          },
+        },
+        {
+          "name": "findHeader",
+          "parameters": [
+            {
+              "defaultValue": "{ renderWithPortal: false }",
+              "description": "* renderWithPortal (boolean) - Flag to find the header when the popover is rendered with a portal",
+              "flags": {
+                "isOptional": false,
+              },
+              "name": "options",
+              "typeName": "{ renderWithPortal: boolean; }",
+            },
+          ],
+          "returnType": {
+            "isNullable": true,
+            "name": "ElementWrapper",
+            "typeArguments": [
+              {
+                "name": "HTMLElement",
+              },
+            ],
+          },
+        },
+        {
+          "name": "findTrigger",
+          "parameters": [],
+          "returnType": {
+            "isNullable": false,
+            "name": "ElementWrapper",
+            "typeArguments": [
+              {
+                "name": "HTMLElement",
+              },
+            ],
+          },
+        },
+      ],
+      "name": "PopoverWrapper",
     },
     {
       "methods": [
@@ -41020,88 +41204,6 @@ Returns null if the panel layout is not resizable.",
         },
       ],
       "name": "PieChartWrapper",
-    },
-    {
-      "methods": [
-        {
-          "name": "findContent",
-          "parameters": [
-            {
-              "defaultValue": "{ renderWithPortal: false }",
-              "description": "* renderWithPortal (boolean) - Flag to find the content when the popover is rendered with a portal",
-              "flags": {
-                "isOptional": false,
-              },
-              "name": "options",
-              "typeName": "{ renderWithPortal: boolean; }",
-            },
-          ],
-          "returnType": {
-            "isNullable": true,
-            "name": "ElementWrapper",
-            "typeArguments": [
-              {
-                "name": "HTMLElement",
-              },
-            ],
-          },
-        },
-        {
-          "name": "findDismissButton",
-          "parameters": [
-            {
-              "defaultValue": "{ renderWithPortal: false }",
-              "description": "* renderWithPortal (boolean) - Flag to find the dismiss button when the popover is rendered with a portal",
-              "flags": {
-                "isOptional": false,
-              },
-              "name": "options",
-              "typeName": "{ renderWithPortal: boolean; }",
-            },
-          ],
-          "returnType": {
-            "isNullable": true,
-            "name": "ButtonWrapper",
-          },
-        },
-        {
-          "name": "findHeader",
-          "parameters": [
-            {
-              "defaultValue": "{ renderWithPortal: false }",
-              "description": "* renderWithPortal (boolean) - Flag to find the header when the popover is rendered with a portal",
-              "flags": {
-                "isOptional": false,
-              },
-              "name": "options",
-              "typeName": "{ renderWithPortal: boolean; }",
-            },
-          ],
-          "returnType": {
-            "isNullable": true,
-            "name": "ElementWrapper",
-            "typeArguments": [
-              {
-                "name": "HTMLElement",
-              },
-            ],
-          },
-        },
-        {
-          "name": "findTrigger",
-          "parameters": [],
-          "returnType": {
-            "isNullable": false,
-            "name": "ElementWrapper",
-            "typeArguments": [
-              {
-                "name": "HTMLElement",
-              },
-            ],
-          },
-        },
-      ],
-      "name": "PopoverWrapper",
     },
     {
       "methods": [
@@ -47513,6 +47615,33 @@ To find a specific item use the \`findBreadcrumbLink(n)\` function as chaining \
           },
         },
         {
+          "description": "Returns the jump to page submit button.",
+          "name": "findJumpToPageButton",
+          "parameters": [],
+          "returnType": {
+            "isNullable": true,
+            "name": "ButtonWrapper",
+          },
+        },
+        {
+          "description": "Returns the jump to page input field.",
+          "name": "findJumpToPageInput",
+          "parameters": [],
+          "returnType": {
+            "isNullable": false,
+            "name": "InputWrapper",
+          },
+        },
+        {
+          "description": "Returns the error popover for jump to page.",
+          "name": "findJumpToPagePopover",
+          "parameters": [],
+          "returnType": {
+            "isNullable": false,
+            "name": "PopoverWrapper",
+          },
+        },
+        {
           "name": "findNextPageButton",
           "parameters": [],
           "returnType": {
@@ -47561,6 +47690,79 @@ To find a specific item use the \`findBreadcrumbLink(n)\` function as chaining \
         },
       ],
       "name": "PaginationWrapper",
+    },
+    {
+      "methods": [
+        {
+          "name": "findContent",
+          "parameters": [
+            {
+              "defaultValue": "{
+    renderWithPortal: false
+  }",
+              "description": "* renderWithPortal (boolean) - Flag to find the content when the popover is rendered with a portal",
+              "flags": {
+                "isOptional": false,
+              },
+              "name": "options",
+              "typeName": "{ renderWithPortal: boolean; }",
+            },
+          ],
+          "returnType": {
+            "isNullable": false,
+            "name": "ElementWrapper",
+          },
+        },
+        {
+          "name": "findDismissButton",
+          "parameters": [
+            {
+              "defaultValue": "{
+    renderWithPortal: false
+  }",
+              "description": "* renderWithPortal (boolean) - Flag to find the dismiss button when the popover is rendered with a portal",
+              "flags": {
+                "isOptional": false,
+              },
+              "name": "options",
+              "typeName": "{ renderWithPortal: boolean; }",
+            },
+          ],
+          "returnType": {
+            "isNullable": false,
+            "name": "ButtonWrapper",
+          },
+        },
+        {
+          "name": "findHeader",
+          "parameters": [
+            {
+              "defaultValue": "{
+    renderWithPortal: false
+  }",
+              "description": "* renderWithPortal (boolean) - Flag to find the header when the popover is rendered with a portal",
+              "flags": {
+                "isOptional": false,
+              },
+              "name": "options",
+              "typeName": "{ renderWithPortal: boolean; }",
+            },
+          ],
+          "returnType": {
+            "isNullable": false,
+            "name": "ElementWrapper",
+          },
+        },
+        {
+          "name": "findTrigger",
+          "parameters": [],
+          "returnType": {
+            "isNullable": false,
+            "name": "ElementWrapper",
+          },
+        },
+      ],
+      "name": "PopoverWrapper",
     },
     {
       "methods": [
@@ -50682,79 +50884,6 @@ Returns null if the panel layout is not resizable.",
         },
       ],
       "name": "PieChartWrapper",
-    },
-    {
-      "methods": [
-        {
-          "name": "findContent",
-          "parameters": [
-            {
-              "defaultValue": "{
-    renderWithPortal: false
-  }",
-              "description": "* renderWithPortal (boolean) - Flag to find the content when the popover is rendered with a portal",
-              "flags": {
-                "isOptional": false,
-              },
-              "name": "options",
-              "typeName": "{ renderWithPortal: boolean; }",
-            },
-          ],
-          "returnType": {
-            "isNullable": false,
-            "name": "ElementWrapper",
-          },
-        },
-        {
-          "name": "findDismissButton",
-          "parameters": [
-            {
-              "defaultValue": "{
-    renderWithPortal: false
-  }",
-              "description": "* renderWithPortal (boolean) - Flag to find the dismiss button when the popover is rendered with a portal",
-              "flags": {
-                "isOptional": false,
-              },
-              "name": "options",
-              "typeName": "{ renderWithPortal: boolean; }",
-            },
-          ],
-          "returnType": {
-            "isNullable": false,
-            "name": "ButtonWrapper",
-          },
-        },
-        {
-          "name": "findHeader",
-          "parameters": [
-            {
-              "defaultValue": "{
-    renderWithPortal: false
-  }",
-              "description": "* renderWithPortal (boolean) - Flag to find the header when the popover is rendered with a portal",
-              "flags": {
-                "isOptional": false,
-              },
-              "name": "options",
-              "typeName": "{ renderWithPortal: boolean; }",
-            },
-          ],
-          "returnType": {
-            "isNullable": false,
-            "name": "ElementWrapper",
-          },
-        },
-        {
-          "name": "findTrigger",
-          "parameters": [],
-          "returnType": {
-            "isNullable": false,
-            "name": "ElementWrapper",
-          },
-        },
-      ],
-      "name": "PopoverWrapper",
     },
     {
       "methods": [

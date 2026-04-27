@@ -164,6 +164,26 @@ const metadata: StyleDictionary.MetadataIndex = {
     public: true,
     themeable: true,
   },
+  spaceTokenVertical: {
+    description: 'The vertical padding inside tokens.',
+    public: true,
+    themeable: true,
+  },
+  spaceFieldVertical: {
+    description: 'The vertical padding inside control components.',
+    public: true,
+    themeable: true,
+  },
+  spaceOptionPaddingVertical: {
+    description: 'The vertical padding inside dropdown option items.',
+    public: true,
+    themeable: false,
+  },
+  spaceOptionPaddingHorizontal: {
+    description: 'The horizontal padding inside dropdown option items.',
+    public: true,
+    themeable: false,
+  },
 };
 
 export default metadata;

@@ -11,6 +11,8 @@ const tokens: StyleDictionary.SpacingDictionary = {
   spaceButtonFocusOutlineGutter: '4px',
   spaceButtonHorizontal: '{spaceScaledL}',
   spaceButtonVertical: '{spaceScaledXxs}',
+  spaceTokenVertical: '{spaceScaledXxs}',
+  spaceFieldVertical: { comfortable: '5px', compact: '3px' },
   spaceButtonIconFocusOutlineGutterVertical: '0px',
   spaceButtonIconOnlyHorizontal: { comfortable: '6px', compact: '{spaceXxs}' },
   spaceButtonInlineIconFocusOutlineGutter: '0px',
@@ -79,6 +81,9 @@ const tokens: StyleDictionary.SpacingDictionary = {
   spaceActionCardVerticalEmbedded: '{spaceCardVerticalEmbedded}',
   spaceActionCardDescriptionPaddingTop: '{spaceScaledXxs}',
   spaceActionCardContentPaddingTop: '{spaceScaledXs}',
+
+  spaceOptionPaddingVertical: '{spaceXxs}',
+  spaceOptionPaddingHorizontal: '{spaceL}',
 
   spaceScaled2xNone: '{spaceNone}',
   spaceScaled2xXxxs: { comfortable: '{spaceXxxs}', compact: '{spaceNone}' },

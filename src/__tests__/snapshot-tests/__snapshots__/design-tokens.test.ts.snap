@@ -431,6 +431,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
             "light": "#0a4a74",
           },
         },
+        "color-background-layout-toolbar": {
+          "$description": "The background color of the app layout's toolbar. For example: The toolbar bar containing breadcrumbs and toggle buttons.",
+          "$value": {
+            "dark": "#2a2e33",
+            "light": "#ffffff",
+          },
+        },
         "color-background-loading-bar-gen-ai": {
           "$description": "The background color of gen-ai loading bars.",
           "$value": {
@@ -683,11 +690,32 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
             "light": "#16191f",
           },
         },
+        "color-border-button-primary-active": {
+          "$description": "The border color of primary buttons in active state.",
+          "$value": {
+            "dark": "#44b9d6",
+            "light": "#12293b",
+          },
+        },
+        "color-border-button-primary-default": {
+          "$description": "The border color of primary buttons.",
+          "$value": {
+            "dark": "#44b9d6",
+            "light": "#0073bb",
+          },
+        },
         "color-border-button-primary-disabled": {
           "$description": "The border color of primary buttons in disabled state.",
           "$value": {
             "dark": "#414750",
             "light": "#d5dbdb",
+          },
+        },
+        "color-border-button-primary-hover": {
+          "$description": "The border color of primary buttons in hover state.",
+          "$value": {
+            "dark": "#00a1c9",
+            "light": "#0a4a74",
           },
         },
         "color-border-card": {
@@ -2605,6 +2633,10 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
           "$description": "The default font weight for button text.",
           "$value": "700",
         },
+        "font-weight-display-l": {
+          "$description": "The default font weight for large display text.",
+          "$value": "700",
+        },
         "font-weight-flashbar-header": {
           "$description": "The default font weight for flashbar header text.",
           "$value": "700",
@@ -2802,6 +2834,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
             "light": "0px 4px 8px rgba(0, 28, 36, 0.45)",
           },
         },
+        "size-vertical-input": {
+          "$description": "The height of form input components. For example: input, select, multiselect, autosuggest, and datepicker.",
+          "$value": {
+            "comfortable": "32px",
+            "compact": "28px",
+          },
+        },
         "space-alert-vertical": {
           "$description": "The vertical padding inside alert components.",
           "$value": {
@@ -2863,6 +2902,27 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
           "$value": {
             "comfortable": "8px",
             "compact": "8px",
+          },
+        },
+        "space-field-vertical": {
+          "$description": "The vertical padding inside control components.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "2px",
+          },
+        },
+        "space-option-padding-horizontal": {
+          "$description": "The horizontal padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "20px",
+            "compact": "20px",
+          },
+        },
+        "space-option-padding-vertical": {
+          "$description": "The vertical padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "4px",
           },
         },
         "space-scaled-l": {
@@ -2993,6 +3053,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
         },
         "space-tabs-vertical": {
           "$description": "The vertical padding inside tabs.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "2px",
+          },
+        },
+        "space-token-vertical": {
+          "$description": "The vertical padding inside tokens.",
           "$value": {
             "comfortable": "4px",
             "compact": "2px",
@@ -3435,6 +3502,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
             "light": "#0a4a74",
           },
         },
+        "color-background-layout-toolbar": {
+          "$description": "The background color of the app layout's toolbar. For example: The toolbar bar containing breadcrumbs and toggle buttons.",
+          "$value": {
+            "dark": "#2a2e33",
+            "light": "#ffffff",
+          },
+        },
         "color-background-loading-bar-gen-ai": {
           "$description": "The background color of gen-ai loading bars.",
           "$value": {
@@ -3687,11 +3761,32 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
             "light": "#16191f",
           },
         },
+        "color-border-button-primary-active": {
+          "$description": "The border color of primary buttons in active state.",
+          "$value": {
+            "dark": "#44b9d6",
+            "light": "#12293b",
+          },
+        },
+        "color-border-button-primary-default": {
+          "$description": "The border color of primary buttons.",
+          "$value": {
+            "dark": "#44b9d6",
+            "light": "#0073bb",
+          },
+        },
         "color-border-button-primary-disabled": {
           "$description": "The border color of primary buttons in disabled state.",
           "$value": {
             "dark": "#414750",
             "light": "#d5dbdb",
+          },
+        },
+        "color-border-button-primary-hover": {
+          "$description": "The border color of primary buttons in hover state.",
+          "$value": {
+            "dark": "#00a1c9",
+            "light": "#0a4a74",
           },
         },
         "color-border-card": {
@@ -5609,6 +5704,10 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
           "$description": "The default font weight for button text.",
           "$value": "700",
         },
+        "font-weight-display-l": {
+          "$description": "The default font weight for large display text.",
+          "$value": "700",
+        },
         "font-weight-flashbar-header": {
           "$description": "The default font weight for flashbar header text.",
           "$value": "700",
@@ -5806,6 +5905,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
             "light": "0px 4px 8px rgba(0, 28, 36, 0.45)",
           },
         },
+        "size-vertical-input": {
+          "$description": "The height of form input components. For example: input, select, multiselect, autosuggest, and datepicker.",
+          "$value": {
+            "comfortable": "32px",
+            "compact": "28px",
+          },
+        },
         "space-alert-vertical": {
           "$description": "The vertical padding inside alert components.",
           "$value": {
@@ -5867,6 +5973,27 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
           "$value": {
             "comfortable": "8px",
             "compact": "8px",
+          },
+        },
+        "space-field-vertical": {
+          "$description": "The vertical padding inside control components.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "2px",
+          },
+        },
+        "space-option-padding-horizontal": {
+          "$description": "The horizontal padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "20px",
+            "compact": "20px",
+          },
+        },
+        "space-option-padding-vertical": {
+          "$description": "The vertical padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "4px",
           },
         },
         "space-scaled-l": {
@@ -5997,6 +6124,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
         },
         "space-tabs-vertical": {
           "$description": "The vertical padding inside tabs.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "2px",
+          },
+        },
+        "space-token-vertical": {
+          "$description": "The vertical padding inside tokens.",
           "$value": {
             "comfortable": "4px",
             "compact": "2px",
@@ -6439,6 +6573,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
             "light": "#0a4a74",
           },
         },
+        "color-background-layout-toolbar": {
+          "$description": "The background color of the app layout's toolbar. For example: The toolbar bar containing breadcrumbs and toggle buttons.",
+          "$value": {
+            "dark": "#2a2e33",
+            "light": "#ffffff",
+          },
+        },
         "color-background-loading-bar-gen-ai": {
           "$description": "The background color of gen-ai loading bars.",
           "$value": {
@@ -6691,11 +6832,32 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
             "light": "#16191f",
           },
         },
+        "color-border-button-primary-active": {
+          "$description": "The border color of primary buttons in active state.",
+          "$value": {
+            "dark": "#44b9d6",
+            "light": "#12293b",
+          },
+        },
+        "color-border-button-primary-default": {
+          "$description": "The border color of primary buttons.",
+          "$value": {
+            "dark": "#44b9d6",
+            "light": "#0073bb",
+          },
+        },
         "color-border-button-primary-disabled": {
           "$description": "The border color of primary buttons in disabled state.",
           "$value": {
             "dark": "#414750",
             "light": "#d5dbdb",
+          },
+        },
+        "color-border-button-primary-hover": {
+          "$description": "The border color of primary buttons in hover state.",
+          "$value": {
+            "dark": "#00a1c9",
+            "light": "#0a4a74",
           },
         },
         "color-border-card": {
@@ -8613,6 +8775,10 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
           "$description": "The default font weight for button text.",
           "$value": "700",
         },
+        "font-weight-display-l": {
+          "$description": "The default font weight for large display text.",
+          "$value": "700",
+        },
         "font-weight-flashbar-header": {
           "$description": "The default font weight for flashbar header text.",
           "$value": "700",
@@ -8810,6 +8976,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
             "light": "0px 4px 8px rgba(0, 28, 36, 0.45)",
           },
         },
+        "size-vertical-input": {
+          "$description": "The height of form input components. For example: input, select, multiselect, autosuggest, and datepicker.",
+          "$value": {
+            "comfortable": "28px",
+            "compact": "28px",
+          },
+        },
         "space-alert-vertical": {
           "$description": "The vertical padding inside alert components.",
           "$value": {
@@ -8871,6 +9044,27 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
           "$value": {
             "comfortable": "8px",
             "compact": "8px",
+          },
+        },
+        "space-field-vertical": {
+          "$description": "The vertical padding inside control components.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "2px",
+          },
+        },
+        "space-option-padding-horizontal": {
+          "$description": "The horizontal padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "20px",
+            "compact": "20px",
+          },
+        },
+        "space-option-padding-vertical": {
+          "$description": "The vertical padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "4px",
           },
         },
         "space-scaled-l": {
@@ -9001,6 +9195,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
         },
         "space-tabs-vertical": {
           "$description": "The vertical padding inside tabs.",
+          "$value": {
+            "comfortable": "2px",
+            "compact": "2px",
+          },
+        },
+        "space-token-vertical": {
+          "$description": "The vertical padding inside tokens.",
           "$value": {
             "comfortable": "2px",
             "compact": "2px",
@@ -9443,6 +9644,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
             "light": "#0a4a74",
           },
         },
+        "color-background-layout-toolbar": {
+          "$description": "The background color of the app layout's toolbar. For example: The toolbar bar containing breadcrumbs and toggle buttons.",
+          "$value": {
+            "dark": "#2a2e33",
+            "light": "#ffffff",
+          },
+        },
         "color-background-loading-bar-gen-ai": {
           "$description": "The background color of gen-ai loading bars.",
           "$value": {
@@ -9695,11 +9903,32 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
             "light": "#ffffff",
           },
         },
+        "color-border-button-primary-active": {
+          "$description": "The border color of primary buttons in active state.",
+          "$value": {
+            "dark": "#44b9d6",
+            "light": "#12293b",
+          },
+        },
+        "color-border-button-primary-default": {
+          "$description": "The border color of primary buttons.",
+          "$value": {
+            "dark": "#44b9d6",
+            "light": "#0073bb",
+          },
+        },
         "color-border-button-primary-disabled": {
           "$description": "The border color of primary buttons in disabled state.",
           "$value": {
             "dark": "#414750",
             "light": "#d5dbdb",
+          },
+        },
+        "color-border-button-primary-hover": {
+          "$description": "The border color of primary buttons in hover state.",
+          "$value": {
+            "dark": "#00a1c9",
+            "light": "#0a4a74",
           },
         },
         "color-border-card": {
@@ -11617,6 +11846,10 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
           "$description": "The default font weight for button text.",
           "$value": "700",
         },
+        "font-weight-display-l": {
+          "$description": "The default font weight for large display text.",
+          "$value": "700",
+        },
         "font-weight-flashbar-header": {
           "$description": "The default font weight for flashbar header text.",
           "$value": "700",
@@ -11814,6 +12047,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
             "light": "0px 4px 8px rgba(0, 28, 36, 0.45)",
           },
         },
+        "size-vertical-input": {
+          "$description": "The height of form input components. For example: input, select, multiselect, autosuggest, and datepicker.",
+          "$value": {
+            "comfortable": "32px",
+            "compact": "28px",
+          },
+        },
         "space-alert-vertical": {
           "$description": "The vertical padding inside alert components.",
           "$value": {
@@ -11875,6 +12115,27 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
           "$value": {
             "comfortable": "8px",
             "compact": "8px",
+          },
+        },
+        "space-field-vertical": {
+          "$description": "The vertical padding inside control components.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "2px",
+          },
+        },
+        "space-option-padding-horizontal": {
+          "$description": "The horizontal padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "20px",
+            "compact": "20px",
+          },
+        },
+        "space-option-padding-vertical": {
+          "$description": "The vertical padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "4px",
           },
         },
         "space-scaled-l": {
@@ -12005,6 +12266,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
         },
         "space-tabs-vertical": {
           "$description": "The vertical padding inside tabs.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "2px",
+          },
+        },
+        "space-token-vertical": {
+          "$description": "The vertical padding inside tokens.",
           "$value": {
             "comfortable": "4px",
             "compact": "2px",
@@ -12447,6 +12715,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
             "light": "#0a4a74",
           },
         },
+        "color-background-layout-toolbar": {
+          "$description": "The background color of the app layout's toolbar. For example: The toolbar bar containing breadcrumbs and toggle buttons.",
+          "$value": {
+            "dark": "#2a2e33",
+            "light": "#ffffff",
+          },
+        },
         "color-background-loading-bar-gen-ai": {
           "$description": "The background color of gen-ai loading bars.",
           "$value": {
@@ -12699,11 +12974,32 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
             "light": "#16191f",
           },
         },
+        "color-border-button-primary-active": {
+          "$description": "The border color of primary buttons in active state.",
+          "$value": {
+            "dark": "#44b9d6",
+            "light": "#12293b",
+          },
+        },
+        "color-border-button-primary-default": {
+          "$description": "The border color of primary buttons.",
+          "$value": {
+            "dark": "#44b9d6",
+            "light": "#0073bb",
+          },
+        },
         "color-border-button-primary-disabled": {
           "$description": "The border color of primary buttons in disabled state.",
           "$value": {
             "dark": "#414750",
             "light": "#d5dbdb",
+          },
+        },
+        "color-border-button-primary-hover": {
+          "$description": "The border color of primary buttons in hover state.",
+          "$value": {
+            "dark": "#00a1c9",
+            "light": "#0a4a74",
           },
         },
         "color-border-card": {
@@ -14621,6 +14917,10 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
           "$description": "The default font weight for button text.",
           "$value": "700",
         },
+        "font-weight-display-l": {
+          "$description": "The default font weight for large display text.",
+          "$value": "700",
+        },
         "font-weight-flashbar-header": {
           "$description": "The default font weight for flashbar header text.",
           "$value": "700",
@@ -14818,6 +15118,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
             "light": "0px 4px 8px rgba(0, 28, 36, 0.45)",
           },
         },
+        "size-vertical-input": {
+          "$description": "The height of form input components. For example: input, select, multiselect, autosuggest, and datepicker.",
+          "$value": {
+            "comfortable": "32px",
+            "compact": "28px",
+          },
+        },
         "space-alert-vertical": {
           "$description": "The vertical padding inside alert components.",
           "$value": {
@@ -14879,6 +15186,27 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
           "$value": {
             "comfortable": "8px",
             "compact": "8px",
+          },
+        },
+        "space-field-vertical": {
+          "$description": "The vertical padding inside control components.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "2px",
+          },
+        },
+        "space-option-padding-horizontal": {
+          "$description": "The horizontal padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "20px",
+            "compact": "20px",
+          },
+        },
+        "space-option-padding-vertical": {
+          "$description": "The vertical padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "4px",
           },
         },
         "space-scaled-l": {
@@ -15009,6 +15337,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
         },
         "space-tabs-vertical": {
           "$description": "The vertical padding inside tabs.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "2px",
+          },
+        },
+        "space-token-vertical": {
+          "$description": "The vertical padding inside tokens.",
           "$value": {
             "comfortable": "4px",
             "compact": "2px",
@@ -15451,6 +15786,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
             "light": "#44b9d6",
           },
         },
+        "color-background-layout-toolbar": {
+          "$description": "The background color of the app layout's toolbar. For example: The toolbar bar containing breadcrumbs and toggle buttons.",
+          "$value": {
+            "dark": "#232f3e",
+            "light": "#232f3e",
+          },
+        },
         "color-background-loading-bar-gen-ai": {
           "$description": "The background color of gen-ai loading bars.",
           "$value": {
@@ -15703,11 +16045,32 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
             "light": "#aab7b8",
           },
         },
+        "color-border-button-primary-active": {
+          "$description": "The border color of primary buttons in active state.",
+          "$value": {
+            "dark": "#44b9d6",
+            "light": "#44b9d6",
+          },
+        },
+        "color-border-button-primary-default": {
+          "$description": "The border color of primary buttons.",
+          "$value": {
+            "dark": "#44b9d6",
+            "light": "#44b9d6",
+          },
+        },
         "color-border-button-primary-disabled": {
           "$description": "The border color of primary buttons in disabled state.",
           "$value": {
             "dark": "#414750",
             "light": "#414750",
+          },
+        },
+        "color-border-button-primary-hover": {
+          "$description": "The border color of primary buttons in hover state.",
+          "$value": {
+            "dark": "#00a1c9",
+            "light": "#00a1c9",
           },
         },
         "color-border-card": {
@@ -17625,6 +17988,10 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
           "$description": "The default font weight for button text.",
           "$value": "700",
         },
+        "font-weight-display-l": {
+          "$description": "The default font weight for large display text.",
+          "$value": "700",
+        },
         "font-weight-flashbar-header": {
           "$description": "The default font weight for flashbar header text.",
           "$value": "700",
@@ -17822,6 +18189,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
             "light": "0px 4px 8px rgba(0, 28, 36, 0.45)",
           },
         },
+        "size-vertical-input": {
+          "$description": "The height of form input components. For example: input, select, multiselect, autosuggest, and datepicker.",
+          "$value": {
+            "comfortable": "32px",
+            "compact": "28px",
+          },
+        },
         "space-alert-vertical": {
           "$description": "The vertical padding inside alert components.",
           "$value": {
@@ -17883,6 +18257,27 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
           "$value": {
             "comfortable": "8px",
             "compact": "8px",
+          },
+        },
+        "space-field-vertical": {
+          "$description": "The vertical padding inside control components.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "2px",
+          },
+        },
+        "space-option-padding-horizontal": {
+          "$description": "The horizontal padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "20px",
+            "compact": "20px",
+          },
+        },
+        "space-option-padding-vertical": {
+          "$description": "The vertical padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "4px",
           },
         },
         "space-scaled-l": {
@@ -18013,6 +18408,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
         },
         "space-tabs-vertical": {
           "$description": "The vertical padding inside tabs.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "2px",
+          },
+        },
+        "space-token-vertical": {
+          "$description": "The vertical padding inside tokens.",
           "$value": {
             "comfortable": "4px",
             "compact": "2px",
@@ -18455,6 +18857,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
         "light": "#0a4a74",
       },
     },
+    "color-background-layout-toolbar": {
+      "$description": "The background color of the app layout's toolbar. For example: The toolbar bar containing breadcrumbs and toggle buttons.",
+      "$value": {
+        "dark": "#2a2e33",
+        "light": "#ffffff",
+      },
+    },
     "color-background-loading-bar-gen-ai": {
       "$description": "The background color of gen-ai loading bars.",
       "$value": {
@@ -18707,11 +19116,32 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
         "light": "#16191f",
       },
     },
+    "color-border-button-primary-active": {
+      "$description": "The border color of primary buttons in active state.",
+      "$value": {
+        "dark": "#44b9d6",
+        "light": "#12293b",
+      },
+    },
+    "color-border-button-primary-default": {
+      "$description": "The border color of primary buttons.",
+      "$value": {
+        "dark": "#44b9d6",
+        "light": "#0073bb",
+      },
+    },
     "color-border-button-primary-disabled": {
       "$description": "The border color of primary buttons in disabled state.",
       "$value": {
         "dark": "#414750",
         "light": "#d5dbdb",
+      },
+    },
+    "color-border-button-primary-hover": {
+      "$description": "The border color of primary buttons in hover state.",
+      "$value": {
+        "dark": "#00a1c9",
+        "light": "#0a4a74",
       },
     },
     "color-border-card": {
@@ -20629,6 +21059,10 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
       "$description": "The default font weight for button text.",
       "$value": "700",
     },
+    "font-weight-display-l": {
+      "$description": "The default font weight for large display text.",
+      "$value": "700",
+    },
     "font-weight-flashbar-header": {
       "$description": "The default font weight for flashbar header text.",
       "$value": "700",
@@ -20826,6 +21260,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
         "light": "0px 4px 8px rgba(0, 28, 36, 0.45)",
       },
     },
+    "size-vertical-input": {
+      "$description": "The height of form input components. For example: input, select, multiselect, autosuggest, and datepicker.",
+      "$value": {
+        "comfortable": "32px",
+        "compact": "28px",
+      },
+    },
     "space-alert-vertical": {
       "$description": "The vertical padding inside alert components.",
       "$value": {
@@ -20887,6 +21328,27 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
       "$value": {
         "comfortable": "8px",
         "compact": "8px",
+      },
+    },
+    "space-field-vertical": {
+      "$description": "The vertical padding inside control components.",
+      "$value": {
+        "comfortable": "4px",
+        "compact": "2px",
+      },
+    },
+    "space-option-padding-horizontal": {
+      "$description": "The horizontal padding inside dropdown option items.",
+      "$value": {
+        "comfortable": "20px",
+        "compact": "20px",
+      },
+    },
+    "space-option-padding-vertical": {
+      "$description": "The vertical padding inside dropdown option items.",
+      "$value": {
+        "comfortable": "4px",
+        "compact": "4px",
       },
     },
     "space-scaled-l": {
@@ -21017,6 +21479,13 @@ exports[`Design tokens artifacts Design tokens JSON for classic matches the snap
     },
     "space-tabs-vertical": {
       "$description": "The vertical padding inside tabs.",
+      "$value": {
+        "comfortable": "4px",
+        "compact": "2px",
+      },
+    },
+    "space-token-vertical": {
+      "$description": "The vertical padding inside tokens.",
       "$value": {
         "comfortable": "4px",
         "compact": "2px",
@@ -21464,6 +21933,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "#004a9e",
           },
         },
+        "color-background-layout-toolbar": {
+          "$description": "The background color of the app layout's toolbar. For example: The toolbar bar containing breadcrumbs and toggle buttons.",
+          "$value": {
+            "dark": "#161d26",
+            "light": "#ffffff",
+          },
+        },
         "color-background-loading-bar-gen-ai": {
           "$description": "The background color of gen-ai loading bars.",
           "$value": {
@@ -21716,11 +22192,32 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "#0f141a",
           },
         },
+        "color-border-button-primary-active": {
+          "$description": "The border color of primary buttons in active state.",
+          "$value": {
+            "dark": "#42b4ff",
+            "light": "#002b66",
+          },
+        },
+        "color-border-button-primary-default": {
+          "$description": "The border color of primary buttons.",
+          "$value": {
+            "dark": "#dedee3",
+            "light": "#424650",
+          },
+        },
         "color-border-button-primary-disabled": {
           "$description": "The border color of primary buttons in disabled state.",
           "$value": {
             "dark": "#232b37",
             "light": "#ebebf0",
+          },
+        },
+        "color-border-button-primary-hover": {
+          "$description": "The border color of primary buttons in hover state.",
+          "$value": {
+            "dark": "#ffffff",
+            "light": "#0f141a",
           },
         },
         "color-border-card": {
@@ -23638,6 +24135,10 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
           "$description": "The default font weight for button text.",
           "$value": "700",
         },
+        "font-weight-display-l": {
+          "$description": "The default font weight for large display text.",
+          "$value": "700",
+        },
         "font-weight-flashbar-header": {
           "$description": "The default font weight for flashbar header text.",
           "$value": "700",
@@ -23835,6 +24336,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "0px 1px 1px 1px #e9ebed, 0px 6px 36px #0007161a",
           },
         },
+        "size-vertical-input": {
+          "$description": "The height of form input components. For example: input, select, multiselect, autosuggest, and datepicker.",
+          "$value": {
+            "comfortable": "32px",
+            "compact": "28px",
+          },
+        },
         "space-alert-vertical": {
           "$description": "The vertical padding inside alert components.",
           "$value": {
@@ -23896,6 +24404,27 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
           "$value": {
             "comfortable": "12px",
             "compact": "12px",
+          },
+        },
+        "space-field-vertical": {
+          "$description": "The vertical padding inside control components.",
+          "$value": {
+            "comfortable": "5px",
+            "compact": "3px",
+          },
+        },
+        "space-option-padding-horizontal": {
+          "$description": "The horizontal padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "20px",
+            "compact": "20px",
+          },
+        },
+        "space-option-padding-vertical": {
+          "$description": "The vertical padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "4px",
           },
         },
         "space-scaled-l": {
@@ -24026,6 +24555,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
         },
         "space-tabs-vertical": {
           "$description": "The vertical padding inside tabs.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "2px",
+          },
+        },
+        "space-token-vertical": {
+          "$description": "The vertical padding inside tokens.",
           "$value": {
             "comfortable": "4px",
             "compact": "2px",
@@ -24468,6 +25004,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "#75cfff",
           },
         },
+        "color-background-layout-toolbar": {
+          "$description": "The background color of the app layout's toolbar. For example: The toolbar bar containing breadcrumbs and toggle buttons.",
+          "$value": {
+            "dark": "#161d26",
+            "light": "#161d26",
+          },
+        },
         "color-background-loading-bar-gen-ai": {
           "$description": "The background color of gen-ai loading bars.",
           "$value": {
@@ -24720,11 +25263,32 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "#ffffff",
           },
         },
+        "color-border-button-primary-active": {
+          "$description": "The border color of primary buttons in active state.",
+          "$value": {
+            "dark": "#42b4ff",
+            "light": "#42b4ff",
+          },
+        },
+        "color-border-button-primary-default": {
+          "$description": "The border color of primary buttons.",
+          "$value": {
+            "dark": "#dedee3",
+            "light": "#dedee3",
+          },
+        },
         "color-border-button-primary-disabled": {
           "$description": "The border color of primary buttons in disabled state.",
           "$value": {
             "dark": "#232b37",
             "light": "#232b37",
+          },
+        },
+        "color-border-button-primary-hover": {
+          "$description": "The border color of primary buttons in hover state.",
+          "$value": {
+            "dark": "#ffffff",
+            "light": "#ffffff",
           },
         },
         "color-border-card": {
@@ -26642,6 +27206,10 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
           "$description": "The default font weight for button text.",
           "$value": "700",
         },
+        "font-weight-display-l": {
+          "$description": "The default font weight for large display text.",
+          "$value": "700",
+        },
         "font-weight-flashbar-header": {
           "$description": "The default font weight for flashbar header text.",
           "$value": "700",
@@ -26839,6 +27407,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "0px 1px 1px 1px #e9ebed, 0px 6px 36px #0007161a",
           },
         },
+        "size-vertical-input": {
+          "$description": "The height of form input components. For example: input, select, multiselect, autosuggest, and datepicker.",
+          "$value": {
+            "comfortable": "32px",
+            "compact": "28px",
+          },
+        },
         "space-alert-vertical": {
           "$description": "The vertical padding inside alert components.",
           "$value": {
@@ -26900,6 +27475,27 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
           "$value": {
             "comfortable": "12px",
             "compact": "12px",
+          },
+        },
+        "space-field-vertical": {
+          "$description": "The vertical padding inside control components.",
+          "$value": {
+            "comfortable": "5px",
+            "compact": "3px",
+          },
+        },
+        "space-option-padding-horizontal": {
+          "$description": "The horizontal padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "20px",
+            "compact": "20px",
+          },
+        },
+        "space-option-padding-vertical": {
+          "$description": "The vertical padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "4px",
           },
         },
         "space-scaled-l": {
@@ -27030,6 +27626,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
         },
         "space-tabs-vertical": {
           "$description": "The vertical padding inside tabs.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "2px",
+          },
+        },
+        "space-token-vertical": {
+          "$description": "The vertical padding inside tokens.",
           "$value": {
             "comfortable": "4px",
             "compact": "2px",
@@ -27472,6 +28075,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "#004a9e",
           },
         },
+        "color-background-layout-toolbar": {
+          "$description": "The background color of the app layout's toolbar. For example: The toolbar bar containing breadcrumbs and toggle buttons.",
+          "$value": {
+            "dark": "#161d26",
+            "light": "#ffffff",
+          },
+        },
         "color-background-loading-bar-gen-ai": {
           "$description": "The background color of gen-ai loading bars.",
           "$value": {
@@ -27724,11 +28334,32 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "#002b66",
           },
         },
+        "color-border-button-primary-active": {
+          "$description": "The border color of primary buttons in active state.",
+          "$value": {
+            "dark": "#42b4ff",
+            "light": "#002b66",
+          },
+        },
+        "color-border-button-primary-default": {
+          "$description": "The border color of primary buttons.",
+          "$value": {
+            "dark": "#42b4ff",
+            "light": "#006ce0",
+          },
+        },
         "color-border-button-primary-disabled": {
           "$description": "The border color of primary buttons in disabled state.",
           "$value": {
             "dark": "#232b37",
             "light": "#ebebf0",
+          },
+        },
+        "color-border-button-primary-hover": {
+          "$description": "The border color of primary buttons in hover state.",
+          "$value": {
+            "dark": "#75cfff",
+            "light": "#002b66",
           },
         },
         "color-border-card": {
@@ -29646,6 +30277,10 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
           "$description": "The default font weight for button text.",
           "$value": "700",
         },
+        "font-weight-display-l": {
+          "$description": "The default font weight for large display text.",
+          "$value": "700",
+        },
         "font-weight-flashbar-header": {
           "$description": "The default font weight for flashbar header text.",
           "$value": "700",
@@ -29843,6 +30478,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "0px 1px 1px 1px #e9ebed, 0px 6px 36px #0007161a",
           },
         },
+        "size-vertical-input": {
+          "$description": "The height of form input components. For example: input, select, multiselect, autosuggest, and datepicker.",
+          "$value": {
+            "comfortable": "32px",
+            "compact": "28px",
+          },
+        },
         "space-alert-vertical": {
           "$description": "The vertical padding inside alert components.",
           "$value": {
@@ -29904,6 +30546,27 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
           "$value": {
             "comfortable": "12px",
             "compact": "12px",
+          },
+        },
+        "space-field-vertical": {
+          "$description": "The vertical padding inside control components.",
+          "$value": {
+            "comfortable": "5px",
+            "compact": "3px",
+          },
+        },
+        "space-option-padding-horizontal": {
+          "$description": "The horizontal padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "20px",
+            "compact": "20px",
+          },
+        },
+        "space-option-padding-vertical": {
+          "$description": "The vertical padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "4px",
           },
         },
         "space-scaled-l": {
@@ -30034,6 +30697,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
         },
         "space-tabs-vertical": {
           "$description": "The vertical padding inside tabs.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "2px",
+          },
+        },
+        "space-token-vertical": {
+          "$description": "The vertical padding inside tokens.",
           "$value": {
             "comfortable": "4px",
             "compact": "2px",
@@ -30476,6 +31146,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "#004a9e",
           },
         },
+        "color-background-layout-toolbar": {
+          "$description": "The background color of the app layout's toolbar. For example: The toolbar bar containing breadcrumbs and toggle buttons.",
+          "$value": {
+            "dark": "#161d26",
+            "light": "#ffffff",
+          },
+        },
         "color-background-loading-bar-gen-ai": {
           "$description": "The background color of gen-ai loading bars.",
           "$value": {
@@ -30728,11 +31405,32 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "#002b66",
           },
         },
+        "color-border-button-primary-active": {
+          "$description": "The border color of primary buttons in active state.",
+          "$value": {
+            "dark": "#42b4ff",
+            "light": "#002b66",
+          },
+        },
+        "color-border-button-primary-default": {
+          "$description": "The border color of primary buttons.",
+          "$value": {
+            "dark": "#42b4ff",
+            "light": "#006ce0",
+          },
+        },
         "color-border-button-primary-disabled": {
           "$description": "The border color of primary buttons in disabled state.",
           "$value": {
             "dark": "#232b37",
             "light": "#ebebf0",
+          },
+        },
+        "color-border-button-primary-hover": {
+          "$description": "The border color of primary buttons in hover state.",
+          "$value": {
+            "dark": "#75cfff",
+            "light": "#002b66",
           },
         },
         "color-border-card": {
@@ -32650,6 +33348,10 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
           "$description": "The default font weight for button text.",
           "$value": "700",
         },
+        "font-weight-display-l": {
+          "$description": "The default font weight for large display text.",
+          "$value": "700",
+        },
         "font-weight-flashbar-header": {
           "$description": "The default font weight for flashbar header text.",
           "$value": "700",
@@ -32847,6 +33549,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "0px 1px 1px 1px #e9ebed, 0px 6px 36px #0007161a",
           },
         },
+        "size-vertical-input": {
+          "$description": "The height of form input components. For example: input, select, multiselect, autosuggest, and datepicker.",
+          "$value": {
+            "comfortable": "28px",
+            "compact": "28px",
+          },
+        },
         "space-alert-vertical": {
           "$description": "The vertical padding inside alert components.",
           "$value": {
@@ -32908,6 +33617,27 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
           "$value": {
             "comfortable": "12px",
             "compact": "12px",
+          },
+        },
+        "space-field-vertical": {
+          "$description": "The vertical padding inside control components.",
+          "$value": {
+            "comfortable": "5px",
+            "compact": "3px",
+          },
+        },
+        "space-option-padding-horizontal": {
+          "$description": "The horizontal padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "20px",
+            "compact": "20px",
+          },
+        },
+        "space-option-padding-vertical": {
+          "$description": "The vertical padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "4px",
           },
         },
         "space-scaled-l": {
@@ -33038,6 +33768,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
         },
         "space-tabs-vertical": {
           "$description": "The vertical padding inside tabs.",
+          "$value": {
+            "comfortable": "2px",
+            "compact": "2px",
+          },
+        },
+        "space-token-vertical": {
+          "$description": "The vertical padding inside tokens.",
           "$value": {
             "comfortable": "2px",
             "compact": "2px",
@@ -33480,6 +34217,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "#004a9e",
           },
         },
+        "color-background-layout-toolbar": {
+          "$description": "The background color of the app layout's toolbar. For example: The toolbar bar containing breadcrumbs and toggle buttons.",
+          "$value": {
+            "dark": "#161d26",
+            "light": "#ffffff",
+          },
+        },
         "color-background-loading-bar-gen-ai": {
           "$description": "The background color of gen-ai loading bars.",
           "$value": {
@@ -33732,11 +34476,32 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "#ffffff",
           },
         },
+        "color-border-button-primary-active": {
+          "$description": "The border color of primary buttons in active state.",
+          "$value": {
+            "dark": "#42b4ff",
+            "light": "#002b66",
+          },
+        },
+        "color-border-button-primary-default": {
+          "$description": "The border color of primary buttons.",
+          "$value": {
+            "dark": "#f9f9fa",
+            "light": "#f9f9fa",
+          },
+        },
         "color-border-button-primary-disabled": {
           "$description": "The border color of primary buttons in disabled state.",
           "$value": {
             "dark": "#232b37",
             "light": "#ebebf0",
+          },
+        },
+        "color-border-button-primary-hover": {
+          "$description": "The border color of primary buttons in hover state.",
+          "$value": {
+            "dark": "#ffffff",
+            "light": "#ffffff",
           },
         },
         "color-border-card": {
@@ -35654,6 +36419,10 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
           "$description": "The default font weight for button text.",
           "$value": "700",
         },
+        "font-weight-display-l": {
+          "$description": "The default font weight for large display text.",
+          "$value": "700",
+        },
         "font-weight-flashbar-header": {
           "$description": "The default font weight for flashbar header text.",
           "$value": "700",
@@ -35851,6 +36620,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "0px 1px 1px 1px #e9ebed, 0px 6px 36px #0007161a",
           },
         },
+        "size-vertical-input": {
+          "$description": "The height of form input components. For example: input, select, multiselect, autosuggest, and datepicker.",
+          "$value": {
+            "comfortable": "32px",
+            "compact": "28px",
+          },
+        },
         "space-alert-vertical": {
           "$description": "The vertical padding inside alert components.",
           "$value": {
@@ -35912,6 +36688,27 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
           "$value": {
             "comfortable": "12px",
             "compact": "12px",
+          },
+        },
+        "space-field-vertical": {
+          "$description": "The vertical padding inside control components.",
+          "$value": {
+            "comfortable": "5px",
+            "compact": "3px",
+          },
+        },
+        "space-option-padding-horizontal": {
+          "$description": "The horizontal padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "20px",
+            "compact": "20px",
+          },
+        },
+        "space-option-padding-vertical": {
+          "$description": "The vertical padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "4px",
           },
         },
         "space-scaled-l": {
@@ -36042,6 +36839,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
         },
         "space-tabs-vertical": {
           "$description": "The vertical padding inside tabs.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "2px",
+          },
+        },
+        "space-token-vertical": {
+          "$description": "The vertical padding inside tokens.",
           "$value": {
             "comfortable": "4px",
             "compact": "2px",
@@ -36484,6 +37288,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "#004a9e",
           },
         },
+        "color-background-layout-toolbar": {
+          "$description": "The background color of the app layout's toolbar. For example: The toolbar bar containing breadcrumbs and toggle buttons.",
+          "$value": {
+            "dark": "#161d26",
+            "light": "#ffffff",
+          },
+        },
         "color-background-loading-bar-gen-ai": {
           "$description": "The background color of gen-ai loading bars.",
           "$value": {
@@ -36736,11 +37547,32 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "#0f141a",
           },
         },
+        "color-border-button-primary-active": {
+          "$description": "The border color of primary buttons in active state.",
+          "$value": {
+            "dark": "#42b4ff",
+            "light": "#002b66",
+          },
+        },
+        "color-border-button-primary-default": {
+          "$description": "The border color of primary buttons.",
+          "$value": {
+            "dark": "#424650",
+            "light": "#424650",
+          },
+        },
         "color-border-button-primary-disabled": {
           "$description": "The border color of primary buttons in disabled state.",
           "$value": {
             "dark": "#232b37",
             "light": "#ebebf0",
+          },
+        },
+        "color-border-button-primary-hover": {
+          "$description": "The border color of primary buttons in hover state.",
+          "$value": {
+            "dark": "#0f141a",
+            "light": "#0f141a",
           },
         },
         "color-border-card": {
@@ -38658,6 +39490,10 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
           "$description": "The default font weight for button text.",
           "$value": "700",
         },
+        "font-weight-display-l": {
+          "$description": "The default font weight for large display text.",
+          "$value": "700",
+        },
         "font-weight-flashbar-header": {
           "$description": "The default font weight for flashbar header text.",
           "$value": "700",
@@ -38855,6 +39691,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "0px 1px 1px 1px #e9ebed, 0px 6px 36px #0007161a",
           },
         },
+        "size-vertical-input": {
+          "$description": "The height of form input components. For example: input, select, multiselect, autosuggest, and datepicker.",
+          "$value": {
+            "comfortable": "32px",
+            "compact": "28px",
+          },
+        },
         "space-alert-vertical": {
           "$description": "The vertical padding inside alert components.",
           "$value": {
@@ -38916,6 +39759,27 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
           "$value": {
             "comfortable": "12px",
             "compact": "12px",
+          },
+        },
+        "space-field-vertical": {
+          "$description": "The vertical padding inside control components.",
+          "$value": {
+            "comfortable": "5px",
+            "compact": "3px",
+          },
+        },
+        "space-option-padding-horizontal": {
+          "$description": "The horizontal padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "20px",
+            "compact": "20px",
+          },
+        },
+        "space-option-padding-vertical": {
+          "$description": "The vertical padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "4px",
           },
         },
         "space-scaled-l": {
@@ -39046,6 +39910,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
         },
         "space-tabs-vertical": {
           "$description": "The vertical padding inside tabs.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "2px",
+          },
+        },
+        "space-token-vertical": {
+          "$description": "The vertical padding inside tokens.",
           "$value": {
             "comfortable": "4px",
             "compact": "2px",
@@ -39488,6 +40359,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "#75cfff",
           },
         },
+        "color-background-layout-toolbar": {
+          "$description": "The background color of the app layout's toolbar. For example: The toolbar bar containing breadcrumbs and toggle buttons.",
+          "$value": {
+            "dark": "#161d26",
+            "light": "#161d26",
+          },
+        },
         "color-background-loading-bar-gen-ai": {
           "$description": "The background color of gen-ai loading bars.",
           "$value": {
@@ -39740,11 +40618,32 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "#75cfff",
           },
         },
+        "color-border-button-primary-active": {
+          "$description": "The border color of primary buttons in active state.",
+          "$value": {
+            "dark": "#42b4ff",
+            "light": "#42b4ff",
+          },
+        },
+        "color-border-button-primary-default": {
+          "$description": "The border color of primary buttons.",
+          "$value": {
+            "dark": "#42b4ff",
+            "light": "#42b4ff",
+          },
+        },
         "color-border-button-primary-disabled": {
           "$description": "The border color of primary buttons in disabled state.",
           "$value": {
             "dark": "#232b37",
             "light": "#232b37",
+          },
+        },
+        "color-border-button-primary-hover": {
+          "$description": "The border color of primary buttons in hover state.",
+          "$value": {
+            "dark": "#75cfff",
+            "light": "#75cfff",
           },
         },
         "color-border-card": {
@@ -41662,6 +42561,10 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
           "$description": "The default font weight for button text.",
           "$value": "700",
         },
+        "font-weight-display-l": {
+          "$description": "The default font weight for large display text.",
+          "$value": "700",
+        },
         "font-weight-flashbar-header": {
           "$description": "The default font weight for flashbar header text.",
           "$value": "700",
@@ -41859,6 +42762,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "0px 1px 1px 1px #192534, 0px 6px 36px #00040c",
           },
         },
+        "size-vertical-input": {
+          "$description": "The height of form input components. For example: input, select, multiselect, autosuggest, and datepicker.",
+          "$value": {
+            "comfortable": "32px",
+            "compact": "28px",
+          },
+        },
         "space-alert-vertical": {
           "$description": "The vertical padding inside alert components.",
           "$value": {
@@ -41920,6 +42830,27 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
           "$value": {
             "comfortable": "12px",
             "compact": "12px",
+          },
+        },
+        "space-field-vertical": {
+          "$description": "The vertical padding inside control components.",
+          "$value": {
+            "comfortable": "5px",
+            "compact": "3px",
+          },
+        },
+        "space-option-padding-horizontal": {
+          "$description": "The horizontal padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "20px",
+            "compact": "20px",
+          },
+        },
+        "space-option-padding-vertical": {
+          "$description": "The vertical padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "4px",
           },
         },
         "space-scaled-l": {
@@ -42050,6 +42981,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
         },
         "space-tabs-vertical": {
           "$description": "The vertical padding inside tabs.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "2px",
+          },
+        },
+        "space-token-vertical": {
+          "$description": "The vertical padding inside tokens.",
           "$value": {
             "comfortable": "4px",
             "compact": "2px",
@@ -42492,6 +43430,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "#75cfff",
           },
         },
+        "color-background-layout-toolbar": {
+          "$description": "The background color of the app layout's toolbar. For example: The toolbar bar containing breadcrumbs and toggle buttons.",
+          "$value": {
+            "dark": "#161d26",
+            "light": "#161d26",
+          },
+        },
         "color-background-loading-bar-gen-ai": {
           "$description": "The background color of gen-ai loading bars.",
           "$value": {
@@ -42744,11 +43689,32 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "#75cfff",
           },
         },
+        "color-border-button-primary-active": {
+          "$description": "The border color of primary buttons in active state.",
+          "$value": {
+            "dark": "#42b4ff",
+            "light": "#42b4ff",
+          },
+        },
+        "color-border-button-primary-default": {
+          "$description": "The border color of primary buttons.",
+          "$value": {
+            "dark": "#42b4ff",
+            "light": "#42b4ff",
+          },
+        },
         "color-border-button-primary-disabled": {
           "$description": "The border color of primary buttons in disabled state.",
           "$value": {
             "dark": "#232b37",
             "light": "#232b37",
+          },
+        },
+        "color-border-button-primary-hover": {
+          "$description": "The border color of primary buttons in hover state.",
+          "$value": {
+            "dark": "#75cfff",
+            "light": "#75cfff",
           },
         },
         "color-border-card": {
@@ -44666,6 +45632,10 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
           "$description": "The default font weight for button text.",
           "$value": "700",
         },
+        "font-weight-display-l": {
+          "$description": "The default font weight for large display text.",
+          "$value": "700",
+        },
         "font-weight-flashbar-header": {
           "$description": "The default font weight for flashbar header text.",
           "$value": "700",
@@ -44863,6 +45833,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
             "light": "0px 1px 1px 1px #e9ebed, 0px 6px 36px #0007161a",
           },
         },
+        "size-vertical-input": {
+          "$description": "The height of form input components. For example: input, select, multiselect, autosuggest, and datepicker.",
+          "$value": {
+            "comfortable": "32px",
+            "compact": "28px",
+          },
+        },
         "space-alert-vertical": {
           "$description": "The vertical padding inside alert components.",
           "$value": {
@@ -44924,6 +45901,27 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
           "$value": {
             "comfortable": "12px",
             "compact": "12px",
+          },
+        },
+        "space-field-vertical": {
+          "$description": "The vertical padding inside control components.",
+          "$value": {
+            "comfortable": "5px",
+            "compact": "3px",
+          },
+        },
+        "space-option-padding-horizontal": {
+          "$description": "The horizontal padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "20px",
+            "compact": "20px",
+          },
+        },
+        "space-option-padding-vertical": {
+          "$description": "The vertical padding inside dropdown option items.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "4px",
           },
         },
         "space-scaled-l": {
@@ -45054,6 +46052,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
         },
         "space-tabs-vertical": {
           "$description": "The vertical padding inside tabs.",
+          "$value": {
+            "comfortable": "4px",
+            "compact": "2px",
+          },
+        },
+        "space-token-vertical": {
+          "$description": "The vertical padding inside tokens.",
           "$value": {
             "comfortable": "4px",
             "compact": "2px",
@@ -45496,6 +46501,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
         "light": "#004a9e",
       },
     },
+    "color-background-layout-toolbar": {
+      "$description": "The background color of the app layout's toolbar. For example: The toolbar bar containing breadcrumbs and toggle buttons.",
+      "$value": {
+        "dark": "#161d26",
+        "light": "#ffffff",
+      },
+    },
     "color-background-loading-bar-gen-ai": {
       "$description": "The background color of gen-ai loading bars.",
       "$value": {
@@ -45748,11 +46760,32 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
         "light": "#002b66",
       },
     },
+    "color-border-button-primary-active": {
+      "$description": "The border color of primary buttons in active state.",
+      "$value": {
+        "dark": "#42b4ff",
+        "light": "#002b66",
+      },
+    },
+    "color-border-button-primary-default": {
+      "$description": "The border color of primary buttons.",
+      "$value": {
+        "dark": "#42b4ff",
+        "light": "#006ce0",
+      },
+    },
     "color-border-button-primary-disabled": {
       "$description": "The border color of primary buttons in disabled state.",
       "$value": {
         "dark": "#232b37",
         "light": "#ebebf0",
+      },
+    },
+    "color-border-button-primary-hover": {
+      "$description": "The border color of primary buttons in hover state.",
+      "$value": {
+        "dark": "#75cfff",
+        "light": "#002b66",
       },
     },
     "color-border-card": {
@@ -47670,6 +48703,10 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
       "$description": "The default font weight for button text.",
       "$value": "700",
     },
+    "font-weight-display-l": {
+      "$description": "The default font weight for large display text.",
+      "$value": "700",
+    },
     "font-weight-flashbar-header": {
       "$description": "The default font weight for flashbar header text.",
       "$value": "700",
@@ -47867,6 +48904,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
         "light": "0px 1px 1px 1px #e9ebed, 0px 6px 36px #0007161a",
       },
     },
+    "size-vertical-input": {
+      "$description": "The height of form input components. For example: input, select, multiselect, autosuggest, and datepicker.",
+      "$value": {
+        "comfortable": "32px",
+        "compact": "28px",
+      },
+    },
     "space-alert-vertical": {
       "$description": "The vertical padding inside alert components.",
       "$value": {
@@ -47928,6 +48972,27 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
       "$value": {
         "comfortable": "12px",
         "compact": "12px",
+      },
+    },
+    "space-field-vertical": {
+      "$description": "The vertical padding inside control components.",
+      "$value": {
+        "comfortable": "5px",
+        "compact": "3px",
+      },
+    },
+    "space-option-padding-horizontal": {
+      "$description": "The horizontal padding inside dropdown option items.",
+      "$value": {
+        "comfortable": "20px",
+        "compact": "20px",
+      },
+    },
+    "space-option-padding-vertical": {
+      "$description": "The vertical padding inside dropdown option items.",
+      "$value": {
+        "comfortable": "4px",
+        "compact": "4px",
       },
     },
     "space-scaled-l": {
@@ -48058,6 +49123,13 @@ exports[`Design tokens artifacts Design tokens JSON for visual-refresh matches t
     },
     "space-tabs-vertical": {
       "$description": "The vertical padding inside tabs.",
+      "$value": {
+        "comfortable": "4px",
+        "compact": "2px",
+      },
+    },
+    "space-token-vertical": {
+      "$description": "The vertical padding inside tokens.",
       "$value": {
         "comfortable": "4px",
         "compact": "2px",

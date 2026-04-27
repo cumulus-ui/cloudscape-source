@@ -487,6 +487,8 @@ exports[`test-utils selectors 1`] = `
   "pagination": [
     "awsui_button-current_fvjdu",
     "awsui_button_fvjdu",
+    "awsui_jump-to-page-input_fvjdu",
+    "awsui_jump-to-page_fvjdu",
     "awsui_page-number_fvjdu",
     "awsui_root_fvjdu",
   ],
@@ -523,6 +525,7 @@ exports[`test-utils selectors 1`] = `
   ],
   "prompt-input": [
     "awsui_action-button_nr3gs",
+    "awsui_content-editable_nr3gs",
     "awsui_primary-action_nr3gs",
     "awsui_root_nr3gs",
     "awsui_secondary-actions_nr3gs",
